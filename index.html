@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    
+
+    <script src="jq/jquery-3.6.3.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+</head>
+<body>
+
+    <!-- <div class="container mt-3 bg-danger">
+        <img src="nodemodules/bootstrap-icons/icons/arrow-right-square.svg"></img>
+        <p id="demo">Heyy</p>
+        <div class="btn btn-success" onclick="document.getElementById('demo').innerHTML='Hey you'">click me</div>
+    </div> -->
+
+    <div class="container mt-3">
+        <p>click on the buttons below to see either a cat or a dog</p>
+        <button type="button" class="btn btn-secondary" onclick="document.getElementById('imgdemo').src='images/catbreed.jpg'">click to see a cat</button>
+        <img src="images/dogbreed.jpg" id="imgdemo" style="width:200px; height: 150px;">
+        <button type="button" class="btn btn-secondary" onclick="document.getElementById('imgdemo').src='images/dogbreed.jpg'">click to see a dog</button>
+        <!-- <i class="bi bi-0-square"></i>
+        <i class="bi bi-0-circle-fill"></i>
+        <i class="bi bi-volume-mute-fill"></i> -->
+      </div>
+
+   <div class="container-fluid mt-3">
+    <p>click here to see a peacock on a tree branch</p>
+    <button type="button" class=" btn bg-secondary" onclick= "myFunc()">Peacock</button>
+    <p class="mt-2">click here to see it spread</p>
+    <button type="button" class=" btn bg-primary mb-3" onclick="myFun()">Spread peacock</button><br>
+    
+    <div>
+      <img src="images/normpeac.jpg" id="peacdemo" style=" width:200px; height:150px;">
+    </div>
+</div>
+ <script>
+    function myFunc(){
+        document.getElementById('peacdemo').src= 'images/normpeac.jpg'
+    }
+
+    function myFun(){
+        document.getElementById('peacdemo').src='images/spreadpeac.jpg'
+    }
+ </script>   
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>  
+</body>
+</html>
